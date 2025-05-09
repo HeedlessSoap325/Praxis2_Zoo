@@ -1,0 +1,109 @@
+:root{
+    --nav-font-size: 1.3rem;
+    --nav-link-color: black;
+    --nav-bg-color: #f8f9fa;
+
+    --footer-font-size-normal: 1.3rem;
+    --footer-font-size-small: 1rem;
+    --footer-bg-color: #212529;
+    --footer-text-color: white;
+}
+
+body{
+    margin: 0;
+}
+
+/* --- STYLING FÜR DEN HEADER --- */
+.nav{
+    background-color: var(--nav-bg-color);
+    border-radius: 0 0 10px 10px;
+}
+
+.nav-container{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-container > .nav-item{
+    margin: 10px;
+}
+
+.nav-item > .nav-link{
+    color: var(--nav-link-color);
+    font-size: var(--nav-font-size);
+    text-decoration: none;
+}
+
+.nav-dropdown {
+    appearance: none;         /* entfernt normalen style */
+    -webkit-appearance: none; /* für Safari */
+    -moz-appearance: none;    /* für Firefox */
+    background: transparent;
+    border: none;
+    font: inherit;
+    padding: 0;
+    margin: 10px;
+    color: var(--nav-link-color);
+    cursor: pointer;
+    position: relative;
+    font-size: var(--nav-font-size);
+}
+
+.nav-dropdown-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-dropdown-wrapper::after {
+    content: "▾";
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--nav-link-color);
+    font-size: var(--nav-font-size);
+}
+
+/* --- STYLING FÜR DEN FOOTER --- */
+footer{
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-cols{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-cols > .row{
+    margin: 20px 35px 20px 35px;
+}
+
+.footer-links{
+    list-style: none;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: var(--footer-text-color);
+}
+
+.footer-link:hover{
+    text-decoration: underline;
+}
+
+.footer-text{
+    font-size: var(--footer-font-size-normal);
+}
+
+.footer-text.s{
+    font-size: var(--footer-font-size-small);
+}
