@@ -7,6 +7,10 @@
     --footer-font-size-small: 1rem;
     --footer-bg-color: #212529;
     --footer-text-color: white;
+
+    --content-bg-color: #b9babc;
+
+    --universal-border-radius: 10px;
 }
 
 body{
@@ -16,7 +20,7 @@ body{
 /* --- STYLING FÜR DEN HEADER --- */
 .nav{
     background-color: var(--nav-bg-color);
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 var(--universal-border-radius) var(--universal-border-radius);
 }
 
 .nav-container{
@@ -59,7 +63,7 @@ body{
 .nav-dropdown-wrapper::after {
     content: "▾";
     position: absolute;
-    right: -5px;
+    right: 65px;
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
@@ -71,7 +75,7 @@ body{
 footer{
     background-color: var(--footer-bg-color);
     color: var(--footer-text-color);
-    border-radius: 10px 10px 0 0;
+    border-radius: var(--universal-border-radius) var(--universal-border-radius) 0 0;
     display: flex;
     justify-content: center;
 }
