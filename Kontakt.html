@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/zoo.ico">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/starter.css">
     <title>MyLittleZoo - Kontakt</title>
 </head>
 <body>
@@ -41,6 +42,34 @@
             </ul>
         </nav>
     </header>
+    
+    <div class="content">
+        <p class="page-title">Kontakt</p>
+
+        <p>
+            MyLittleZoo AG, zoostrasse 2, Zooen, Schweiz <br><br>
+            
+            Schreiben Sie uns eine E-Mail unter 
+            <a href="mailto:kontakt@MyLittleZoo.ch">kontakt@MyLittleZoo.ch</a><br>
+            oder rufen Sie uns an auf <a href="tel:0041 123 456 78 90">+41 123 456 78 90</a>
+        </p>
+
+        <form class="contact-form" id="contact-form">
+            <label>Name:</label>
+            <input class="contact-input contact-name" placeholder="Ihr Name" required/>
+
+            <label>E-Mail:</label>
+            <input class="contact-input contact-email" placeholder="Ihre E-Mail" required/>
+
+            <label>Nachricht:</label>
+            <textarea class="contact-input contact-message" placeholder="Ihre Nachricht" required></textarea>
+
+            <input class="contact-submit" type="submit" value="Nachricht Senden"/>
+
+            <p class="output"></p>
+        </form>
+        <script src="JS/kontakt.js"></script>
+    </div>
 
     <footer>
         <ul class="footer-cols">
